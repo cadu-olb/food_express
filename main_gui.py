@@ -63,40 +63,42 @@ def excluir_restaurante():
 root = tk.Tk()
 root.title("Food Express")
 root.geometry("500x600")
-root.configure(bg="#fff5e1")
+root.configure(bg="#f4f4f9")  # Fundo mais leve
 
 font_titulo = ("Arial", 18, "bold")
 font_labels = ("Arial", 14)
 font_botoes = ("Arial", 12, "bold")
 
 # Widgets de interface
-label_titulo = tk.Label(root, text="Food Express", font=font_titulo, bg="#fff5e1", fg="#d35400")
+label_titulo = tk.Label(root, text="Food Express", font=font_titulo, bg="#f4f4f9", fg="#eb0434")
 label_titulo.pack(pady=10)
 
-frame = tk.Frame(root, bg="#ffebcd", padx=10, pady=10)
+frame = tk.Frame(root, bg="#f7f7f7", padx=10, pady=10)  # Fundo claro para o frame
 frame.pack(pady=10, padx=10)
 
-label_nome = tk.Label(frame, text="Nome do Restaurante:", font=font_labels, bg="#ffebcd")
+label_nome = tk.Label(frame, text="Nome do Restaurante:", font=font_labels, bg="#f7f7f7", fg="#333333")
 label_nome.grid(row=0, column=0, padx=5, pady=5)
 entry_nome = tk.Entry(frame, width=30)
 entry_nome.grid(row=0, column=1, padx=5, pady=5)
 
-label_cozinha = tk.Label(frame, text="Tipo de Cozinha:", font=font_labels, bg="#ffebcd")
+label_cozinha = tk.Label(frame, text="Tipo de Cozinha:", font=font_labels, bg="#f7f7f7", fg="#333333")
 label_cozinha.grid(row=1, column=0, padx=5, pady=5)
 entry_cozinha = tk.Entry(frame, width=30)
 entry_cozinha.grid(row=1, column=1, padx=5, pady=5)
 
-# Botões de Ações
-btn_cadastrar = tk.Button(root, text="Cadastrar Restaurante", command=cadastrar_restaurante, bg="#28a745", fg="white", font=font_botoes)
+#Cor dos botoes 
+button_color = "#8d021f"  
+
+btn_cadastrar = tk.Button(root, text="Cadastrar Restaurante", command=cadastrar_restaurante, bg=button_color, fg="white", font=font_botoes, width=17)
 btn_cadastrar.pack(pady=5)
 
-btn_listar = tk.Button(root, text="Listar Restaurantes", command=listar_restaurantes, bg="#007bff", fg="white", font=font_botoes)
+btn_listar = tk.Button(root, text="Listar Restaurantes", command=listar_restaurantes, bg=button_color, fg="white", font=font_botoes, width=17)
 btn_listar.pack(pady=5)
 
-btn_ativar = tk.Button(root, text="Ativar Restaurante", command=ativar_restaurante, bg="#ffc107", fg="black", font=font_botoes)
+btn_ativar = tk.Button(root, text="Ativar Restaurante", command=ativar_restaurante, bg=button_color, fg="white", font=font_botoes, width=17)
 btn_ativar.pack(pady=5)
 
-btn_excluir = tk.Button(root, text="Excluir Restaurante", command=excluir_restaurante, bg="#dc3545", fg="white", font=font_botoes)
+btn_excluir = tk.Button(root, text="Excluir Restaurante", command=excluir_restaurante, bg=button_color, fg="white", font=font_botoes, width=17)
 btn_excluir.pack(pady=5)
 
 # Área de Exibição da Lista
