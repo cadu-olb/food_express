@@ -66,5 +66,3 @@ Contribuições são bem-vindas! Se você encontrar algum problema ou quiser adi
 Este projeto é licenciado sob a Licença MIT.
 
 ---
-
-Essa revisão corrige algumas pequenas inconsistências e deixa o formato mais claro, especialmente no uso de blocos de código. Boa sorte com o projeto no GitHub!
